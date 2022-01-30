@@ -12,14 +12,21 @@
   <header>
     <h1>Contact Me</h1>
   </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Main page</a></li>
+      <li>Contact page</a></li>
+      <li><a href="about.html">About page</a></li>
+    </ul>
+  </nav>
   <section>
-    <form action="#" method="get">
+    <form action="#" method="post">
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
+      <input type="text" id="name" autofocus required name="name"><br>
       <label for="email">Email:</label><br>
-      <input type="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="email"><br><br>
+      <input type="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required name="email"><br><br>
       <label for="comment">Comment:</label><br>
-      <textarea id="comment" rows="5" cols="30" wrap="soft" name="comment"></textarea><br>
+      <textarea id="comment" rows="3" cols="30" wrap="soft" name="comment" required></textarea><br>
       <p>Would you like a response?</p>
       <input type="radio" id="response-yes" name="response" value="Yes">
       <label for="response-yes">Yes</label><br>
